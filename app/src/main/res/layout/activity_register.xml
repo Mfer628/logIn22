@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+<ProgressBar
+    android:id="@+id/prgressBar"
+    style="?android:attr/progressBarStyleHorizontal"
+    android:layout_width="match_parent"
+    android:indeterminate="true"
+    android:layout_height="wrap_content"
+    android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/style_bordes_editext"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:textColorHint="@color/white"
+        android:hint="@string/nom"
+        android:inputType="text"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/txtapellido"
+        android:layout_width="400dp"
+        android:background="@drawable/style_bordes_editext"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/apellido"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:radius="80dp"
+        android:inputType="text"
+        android:fontFamily="serif-monospace"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/txtEdad"
+        android:layout_width="400dp"
+        android:background="@drawable/style_bordes_editext"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/edad"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:radius="80dp"
+        android:inputType="number"
+        android:fontFamily="serif-monospace"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="400dp"
+        android:background="@drawable/style_bordes_editext"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/email"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:radius="80dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="serif-monospace"
+        android:imeOptions="actionNext"/>
+    <EditText
+        android:id="@+id/txtpswd"
+        android:layout_width="400dp"
+        android:background="@drawable/style_bordes_editext"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:hint="@string/pswd"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:radius="80dp"
+        android:inputType="textPassword"
+        android:fontFamily="serif-monospace"
+        android:imeOptions="actionNext"/>
+
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="@string/btnC"
+        app:cornerRadius="20dp"
+        android:onClick="Registrar"/>
+
+
+
+
+
+
+    <GridLayout
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="30dp">
+
+        <ImageButton
+            android:id="@+id/ImageFacebook"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/face" />
+
+        <ImageButton
+            android:id="@+id/ImageGoogle"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/go" />
+
+
+
+
+
+
+    </GridLayout>
+
+
+
+
+
+
+
+</LinearLayout>

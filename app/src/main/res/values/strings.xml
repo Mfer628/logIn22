@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name"> A Tiempo</string>
+    <string name="title">Bienvenido</string>
+    <string name="nom">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="edad">Edad</string>
+    <string name="email">Email</string>
+    <string name="pswd">Contraseña</string>
+    <string name="btnC">Crear Cuenta</string>
+    <string name="User">User</string>
+    <string name="passwd">User</string>
+    <string name="Rcuperacion">Recuperar Cuenta</string>
+    <string name="terminos">Acepto terminos y condiciones</string>
+    <string name="message">No existe</string>
+    <string name="btn">Recuperar</string>
+    <string name="Camara">Tomar Foto</string>
+</resources>

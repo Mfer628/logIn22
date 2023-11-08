@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/img"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ProgressBar
+        android:id="@+id/prgressBar1"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:indeterminate="true"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:fontFamily="serif-monospace"
+        android:text="@string/title"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <EditText
+        android:id="@+id/txtUser1"
+        android:layout_width="400dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/style_bordes_editext"
+        android:drawableLeft="@drawable/baseline_person_outline_24"
+        android:textColorHint="@color/white"
+        android:hint="@string/User"
+        android:inputType="textEmailSubject"
+        android:fontFamily="serif-monospace"
+        android:textSize="20dp"
+        android:imeOptions="actionNext"
+        />
+
+    <EditText
+        android:id="@+id/txtpswd1"
+        android:layout_width="400dp"
+        android:background="@drawable/style_bordes_editext"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:hint="@string/passwd"
+        android:drawableLeft="@drawable/baseline_info_24"
+        android:radius="80dp"
+        android:inputType="textWebPassword"
+        android:fontFamily="serif-monospace"
+        android:imeOptions="actionNext"
+
+        />
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="230dp"
+        android:layout_height="60dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Aceptar"
+        android:onClick="logIn"
+        app:cornerRadius="20dp"/>
+
+    <TextView
+        android:id="@+id/lblOlvidastepswd"
+        android:layout_width="300dp"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="visible"
+        android:text="          Olvide mi contraseña"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="OlvidoContraseña"/>
+
+    <TextView
+        android:id="@+id/lblRegitrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:text="Registrarme"
+        android:onClick="register"/>
+
+
+    <GridLayout
+        android:layout_width="333dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="2"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageButton
+            android:id="@+id/ImageFacebook"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/face"
+            android:background="@null"/>
+
+        <ImageButton
+            android:id="@+id/ImageGoogle"
+            android:layout_width="120dp"
+            android:layout_gravity="center"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/go"
+            android:background="@null"/>
+    </GridLayout>
+</LinearLayout>
+
